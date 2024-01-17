@@ -9,7 +9,7 @@ To get this project up and running on your local machine, follow these steps:
 
 Clone the Repository:
 
-Execute git clone [repository-url] in your terminal to clone the project's repository from GitHub.
+Execute git clone https://github.com/VishnuPriyaaa/portfolio.git in your terminal to clone the project's repository from GitHub.
 Set Up a Virtual Environment (Optional but Recommended):
 
 Run python -m venv venv to create a new virtual environment.
@@ -19,13 +19,8 @@ Install Dependencies:
 Within the project directory, execute pip install -r requirements.txt to install the necessary Python packages.
 Set Environment Variables:
 
-Set the FLASK_APP environment variable to your main application file, e.g., export FLASK_APP=app.py on Unix/Linux or set FLASK_APP=app.py on Windows.
-Initialize the Database:
+Start the application with python app.py. This will launch the server, typically accessible at http://localhost:8000.
 
-Run the database initialization script if provided, or set up your database schema as per the project's instructions.
-Run the Flask Application:
-
-Start the application with flask run. This will launch the server, typically accessible at http://localhost:8000.
 What I Learned
 In the process of building this application, I gained valuable insights and skills:
 
@@ -41,7 +36,6 @@ Debugging and Testing: Improved my debugging and testing skills in a full-stack 
 
 Version Control and Documentation: Learned the importance of using version control (git) effectively and writing comprehensive documentation for maintainability and collaboration.
 
-Please replace [repository-url] with the actual URL of your project's repository. This README provides a comprehensive guide for anyone who wants to understand, use, or contribute to your portfolio project.
 
 
 
