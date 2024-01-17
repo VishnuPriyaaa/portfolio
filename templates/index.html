@@ -1,0 +1,69 @@
+{% extends 'navbar.html' %}
+
+{% block content %}
+    <section class="header">
+        <h1>Full Stack Developer</h1>
+        <p>"Through coding, I weave dreams into reality, one line at a time.</p>
+        <img src="https://i.pinimg.com/564x/43/db/46/43db4682a57bbddf864719d9403919eb.jpg" alt="Headshot of myself">
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Passionate Full Stack Developer with 6 years of experience,
+            specializing in Python and React. Expert in crafting dynamic
+            user experiences and robust back-end solutions.
+            A continuous learner, dedicated to innovating and staying ahead in the ever-evolving tech landscape
+        </p>
+        <div id="triangle1"></div>
+        <div id="triangle2"></div>
+    </section>
+    <section id="skills">
+        <i class="fas fa-laptop-code"></i>
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Flask</li>
+            <li>SQLAlchemy</li>
+            <li>React.JS</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>GitHub</li>
+            <li>Visual Studio Code</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <div id="triangle3"></div>
+        <i class="fas fa-file-code"></i>
+        <h2>Projects</h2>
+        {% for project in projects %}
+        <div id="project-list">
+            <div id="project1" class="a-project">
+                <h3>{{project.title}}</h3>
+                <a href={{project.repo_link}} class="github-btn">
+                    <i class="fab fa-github"></i>
+                    View on GitHub
+                </a>
+                <p>{{project.description}}</p>
+                <p>
+                    Skills: {{project.skills}}
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+        <div id="triangle4"></div>
+    </section>
+    <section id="contact">
+        <i class="fas fa-paper-plane"></i>
+        <h2>Contact Me</h2>
+        <p>
+            Interested in Full Stack Python Developer opportunities?
+            I'd love to connect!
+            For job openings or collaborations where my expertise in Python and full-stack development can contribute, feel free to reach out to me. Let's create impactful solutions together!
+        </p>
+        <p>
+            <i class="fas fa-envelope"></i>
+            madireddyvishnupriya@gmail.com
+        </p>
+    </section>
+{% endblock %}
