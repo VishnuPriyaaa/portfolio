@@ -65,8 +65,8 @@ def add_view():
         date_str = request.form.get('date')
         description = request.form.get('desc')
         skills = request.form.get('skills')
-        repo_link = request.form.get('repo_link')
-
+        repo_link = request.form.get('github')
+        print("SKILLS", skills)
         try:
             if len(date_str) == 7 and date_str.count('-') == 1:
                 date_str = date_str + '-01'
